@@ -1,7 +1,8 @@
 import React from "react";
+import Intro from "./components/intro.jsx";
 
 function App() {
-  return <></>;
+  return <Intro />;
 }
 
 export default App;

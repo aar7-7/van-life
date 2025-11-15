@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #333;
+}
+.header {
+  font-family: "Avenir Next", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  background-color: #fff;
+  padding: 10px 20px;
+}
+.header img {
+  height: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.header div {
+  font-size: 1.2rem;
+  display: flex;
+  gap: 15px;
+}
+.hero-image {
+    display: flex;
+  justify-content: center;   
+  align-items: center;       
+  flex-direction: column;
+  height: 100vh;
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-image: url("../assets/bg-intro.png");
+}
+
+.content {
+  padding: 20px;
+}
+
+.content h2 {
+  margin: 0;
+  font-size: 22px;
+  color: white;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.content p {
+  color: #f2f2f2;
+  font-size: 14px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+}
+
+.button {
+  margin-top: 18px;
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  background: #f97316;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #ea6a0f;
+}
+
+.footer {
+  text-align: center;
+  color: #888;
+  font-size: 12px;
+  padding-bottom: 16px;
+}
