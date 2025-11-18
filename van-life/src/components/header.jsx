@@ -7,10 +7,7 @@ export default function Header(){
           <div>
             <img src={logo} className="header--logo" />
           </div>
-          <div>
-            <p>about</p>
-            <p>vans</p>
-          </div>
+          <div></div>
         </div>
       </>
     );

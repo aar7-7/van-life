@@ -3,7 +3,6 @@ import Footer from "../components/footer.jsx";
 export default function Intro() {
     return (
       <>
-        <Header />
         <div className="hero-image">
           <div className="content">
             <h2>You got the travel plans, we got the travel vans.</h2>
@@ -14,9 +13,6 @@ export default function Intro() {
             <button className="button">Find your van</button>
           </div>
         </div>
-        <Footer />
-
-        
       </>
     );
 }
