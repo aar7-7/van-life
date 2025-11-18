@@ -1,8 +1,9 @@
 import React from "react";
-import Intro from "./components/intro.jsx";
+import Intro from "./pages/intro.jsx";
+import About from "./pages/about.jsx";
 
 function App() {
-  return <Intro />;
+  return <About />;
 }
 
 export default App;
