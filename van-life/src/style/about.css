@@ -7,7 +7,8 @@ body {
   background-color: #f5f5f5;
   
 
-}
+} 
+/* About Page Styles */
 .about-page{
     display: flex;
     flex-direction: column;
