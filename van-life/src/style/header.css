@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #333;
+  background-color: #FFF7ED;
 }
 .header {
   
@@ -28,8 +28,22 @@ body {
   display: flex;
   gap: 15px;
 }
+.link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.link:hover {
+  color: #f97316;
+} 
+.link:active {
+  color: #ea6a0f;
+}
+.link:first-child{
+  margin-right: 10px;
+}
 .hero-image {
-    display: flex;
+  display: flex;
   justify-content: center;   
   align-items: center;       
   flex-direction: column;

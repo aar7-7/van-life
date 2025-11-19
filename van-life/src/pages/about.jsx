@@ -1,7 +1,5 @@
-import Footer from "../components/footer.jsx";
-import Header from "../components/header.jsx";
-import '../style/about.css'  
-import image from '../assets/bg-about.png'
+import "../style/about.css";
+import image from "../assets/bg-about.png";
 
 export default function About() {
   return (

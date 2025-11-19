@@ -1,0 +1,35 @@
+.vans-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;  
+}
+.cat-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 800px;
+    
+
+    
+}
+.filter{
+    display: flex;
+    flex-direction: row;
+    gap:20px
+
+ 
+}
+.cat{
+    background-color: #FFEAD0;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.clear-filter{
+    text-decoration: underline;
+    padding:10px 20px
+}
