@@ -2,6 +2,7 @@ import React from "react";
 import Intro from "./pages/intro.jsx";
 import About from "./pages/about.jsx";
 import Vans from "./pages/vans.jsx";
+import SingleVan from "./pages/single-van.jsx";
 import logo from "./assets/logo.png";
 
 import "./style/header.css";
@@ -35,6 +36,7 @@ function App() {
         <Route path="/" element={<Intro />} />
         <Route path="/about" element={<About />} />
         <Route path="/vans" element={<Vans />} />
+        <Route path="vans/:id" element={<SingleVan />} />
       </Routes>
       <footer>
         <p className="footer-copy">© 2025 VanLife — All rights reserved.</p>

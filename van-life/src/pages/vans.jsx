@@ -1,6 +1,8 @@
 import React from 'react'
 import '../style/van.css'
 import Category from "../components/category.jsx";
+import { Link } from "react-router-dom";
+
 export default function Vans() {
   const [data, setData] = React.useState([]);
   React.useEffect(() => {
@@ -8,9 +10,14 @@ export default function Vans() {
       .then((res) => res.json())
       .then((data) => setData(data.vans));
   }, []);
-  console.log(data);
+
   const vanElements = data.map((van) => (
-    <div key={van.id} className="van-tile">
+    <Link
+      to={`/vans/${van.id}`}
+      key={van.id}
+      className="van-tile"
+      state={{ van }}
+    >
       <img src={van.imageUrl} alt={van.name} />
       <div className="van-info">
         <h3 className="van-title">{van.name}</h3>
@@ -21,8 +28,11 @@ export default function Vans() {
         </p>
       </div>
       <Category type={van.type} />
-    </div>
+    </Link>
   ));
+  function handleClick(id) {
+    console.log("clicked id:", id);
+  }
 
   return (
     <div className="vans-page">

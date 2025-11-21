@@ -41,7 +41,9 @@
     width: 100%;
     max-width: 1000px;
 }
-.vans .van-tile{
+.van-tile{
+    color: black;
+    text-decoration: none;
     border: 1px solid #ddd;
     border-radius: 8px;
     overflow: hidden;
