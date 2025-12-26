@@ -1,5 +1,6 @@
 import "../style/about.css";
 import image from "../assets/bg-about.png";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -32,7 +33,9 @@ export default function About() {
         <div className="explore-vans">
           <h3>Your destination is waiting.</h3>
           <h3>Your van is ready.</h3>
-          <button>Explore our vans</button>
+          <Link to="/vans">
+            <button>Explore our vans</button>
+          </Link>
         </div>
       </div>
     </>

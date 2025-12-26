@@ -5,13 +5,18 @@ import { Link } from "react-router-dom";
 
 export default function Vans() {
   const [data, setData] = React.useState([]);
+  const [filterType, setFilterType] = React.useState(null);
   React.useEffect(() => {
     fetch("/api/vans")
       .then((res) => res.json())
       .then((data) => setData(data.vans));
   }, []);
 
-  const vanElements = data.map((van) => (
+  const filteredVans = filterType
+    ? data.filter((van) => van.type === filterType)
+    : data;
+
+  const vanElements = filteredVans.map((van) => (
     <Link
       to={`/vans/${van.id}`}
       key={van.id}
@@ -30,20 +35,25 @@ export default function Vans() {
       <Category type={van.type} />
     </Link>
   ));
-  function handleClick(id) {
-    console.log("clicked id:", id);
-  }
 
   return (
     <div className="vans-page">
       <h1>Explore our Van options</h1>
       <div className="cat-section">
         <div className="filter">
-          <div className="cat">Simple</div>
-          <div className="cat">Luxury</div>
-          <div className="cat">Rugged</div>
+          <div onClick={() => setFilterType("simple")} className="cat">
+            Simple
+          </div>
+          <div onClick={() => setFilterType("luxury")} className="cat">
+            Luxury
+          </div>
+          <div onClick={() => setFilterType("rugged")} className="cat">
+            Rugged
+          </div>
         </div>
-        <div className="clear-filter">Clear filters</div>
+        <div onClick={() => setFilterType(null)} className="clear-filter">
+          Clear filters
+        </div>
       </div>
       <div className="vans">{vanElements}</div>
     </div>
