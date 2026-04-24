@@ -22,16 +22,43 @@
 
  
 }
-.cat{
+.filter{
+    
+    cursor: pointer;
+}
+.cat-simple, .cat-luxury, .cat-rugged{
     background-color: #FFEAD0;
     padding: 10px 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    
+
 }
+
+
+
+.cat-simple:hover{
+    
+color: #eee;
+    background-color: rgb(225, 118, 84);
+    
+}
+.cat-rugged:hover{
+    color: #eee;
+
+    background-color: rgb(17, 94, 89);}
+.cat-luxury:hover{
+    color: #eee;
+
+    background-color: rgb(0, 0, 0);
+}
+
 .clear-filter{
     text-decoration: underline;
+    cursor: pointer;
     padding:10px 20px
+}
+.clear-filter:hover{
+    transform: scale(1.05)
 }
 .vans-page .vans{
     display: grid;
@@ -62,7 +89,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 0 10px 10px;
+    padding: 0 10px 10px 10px;
 
 }
 .van-title,.bold{

@@ -1,6 +1,14 @@
 footer {
-  background-color: #111; /* dark background */
-  color: #eee; /* light text */
+  display:flex;
+  position: fixed;
+  bottom: 0; 
+  right: 0;
+  left: 0;
+  justify-content: center;
+  height: 2vh;
+  padding-block-start: 10%;
+  background-color: #111;
+  color: #eee; 
   padding: 20px 20px;
   text-align: center;
   font-family: "Avenir Next", sans-serif;
@@ -8,7 +16,7 @@ footer {
 
 .footer-container {
   max-width: 1100px;
-  margin: auto;
+
 }
 
 .footer-copy {

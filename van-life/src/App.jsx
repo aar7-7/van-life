@@ -2,6 +2,7 @@ import React from "react";
 import Intro from "./pages/intro.jsx";
 import About from "./pages/about.jsx";
 import Vans from "./pages/vans.jsx";
+import Cart from "./pages/cart.jsx";
 import SingleVan from "./pages/single-van.jsx";
 import logo from "./assets/logo.png";
 
@@ -28,6 +29,9 @@ function App() {
               <Link className="link" to="/vans">
                 Vans
               </Link>
+              <Link className="link" to="/cart">
+                Cart
+              </Link>
             </nav>
           </div>
         </div>
@@ -37,6 +41,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/vans" element={<Vans />} />
         <Route path="vans/:id" element={<SingleVan />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
       <footer>
         <p className="footer-copy">© 2025 VanLife — All rights reserved.</p>

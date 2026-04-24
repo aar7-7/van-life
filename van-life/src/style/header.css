@@ -42,6 +42,9 @@ body {
 .link:first-child{
   margin-right: 10px;
 }
+.link:last-child{
+  margin-left: 10px;
+}
 .hero-image {
   display: flex;
   justify-content: center;   

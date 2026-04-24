@@ -34,7 +34,7 @@
   justify-content: center;
 }
 .back-button {
- margin: 20px;
+  margin: 20px;
   display: flex;
   align-items: center;
   gap: 6px;
@@ -52,10 +52,6 @@
 .back-button img {
   width: 18px;
   height: 18px;
-}
-
-.back-button span {
-  text-decoration: underline;
 }
 
 .back-button:hover span {

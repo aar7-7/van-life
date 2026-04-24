@@ -1,25 +1,12 @@
 import "../style/about.css";
 import image from "../assets/bg-about.png";
 import { Link } from "react-router-dom";
-
 export default function About() {
   return (
     <>
       <div className="about-page">
         <div className="about-image-wrapper">
-          <img
-            src={image}
-            alt="About Us"
-            className="about-image"
-            style={{
-              width: "100%",
-              height: "400px",
-              objectFit: "cover",
-              objectPosition: "center",
-              transform: "scale(0.8)",
-              transformOrigin: "center",
-            }}
-          />
+          <img src={image} alt="About Us" className="about-image" style={{}} />
         </div>
 
         <h2>Don’t squeeze in a sedan when you could relax in a van.</h2>

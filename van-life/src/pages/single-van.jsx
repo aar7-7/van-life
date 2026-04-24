@@ -2,21 +2,19 @@ import { useLocation,useNavigate } from "react-router-dom";
 import '../style/single-van.css';
 import Category from "../components/category"; 
 import arrowBack  from "../assets/arrow-back.png";
+import { addToCart } from "./cart.jsx";
 export default function SingleVan() {
-   const location = useLocation();
-   const van = location.state?.van;
-   const navigate = useNavigate();
-  
+  const location = useLocation();
+  const van = location.state?.van;
+  const navigate = useNavigate();
 
-   function handleBack() {
-     navigate(-1);
-   }
-   
+  function handleBack() {
+    navigate(-1);
+  }
+
   return (
     <>
-      <button className="back-button "
-      onClick={handleBack}
-      >
+      <button className="back-button" onClick={handleBack}>
         <img src={arrowBack} alt="arrow-back" />
         <span>Back to all vans</span>
       </button>
@@ -33,7 +31,9 @@ export default function SingleVan() {
             <span>/day</span>
           </p>
           <p className="description">{van.description}</p>
-          <button className="rent-button">Rent this van</button>
+          <button className="rent-button" onClick={() => addToCart(van.name)}>
+            Rent this van
+          </button>
         </div>
       </div>
     </>

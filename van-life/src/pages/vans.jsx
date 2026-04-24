@@ -35,23 +35,26 @@ export default function Vans() {
       <Category type={van.type} />
     </Link>
   ));
+  function clearFilter() {
+    setFilterType(null);
+  }
 
   return (
     <div className="vans-page">
       <h1>Explore our Van options</h1>
       <div className="cat-section">
         <div className="filter">
-          <div onClick={() => setFilterType("simple")} className="cat">
+          <div onClick={() => setFilterType("simple")} className="cat-simple">
             Simple
           </div>
-          <div onClick={() => setFilterType("luxury")} className="cat">
+          <div onClick={() => setFilterType("luxury")} className="cat-luxury">
             Luxury
           </div>
-          <div onClick={() => setFilterType("rugged")} className="cat">
+          <div onClick={() => setFilterType("rugged")} className="cat-rugged">
             Rugged
           </div>
         </div>
-        <div onClick={() => setFilterType(null)} className="clear-filter">
+        <div onClick={() => clearFilter()} className="clear-filter">
           Clear filters
         </div>
       </div>
